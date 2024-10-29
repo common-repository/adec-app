@@ -1,0 +1,2 @@
+		<h2 class="error-text">Sorry This Plugin Won't work Without Activating "WooCommerce"</center></h2>
+		<h3 class="install-text">Please Download , Install & Activate <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">WooCommerce</a></h3>

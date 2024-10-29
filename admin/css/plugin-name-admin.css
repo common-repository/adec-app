@@ -1,0 +1,248 @@
+body
+{
+    background-color: #f7f7f7;
+}
+
+.wrapper
+{
+    width: 960px;
+    margin: 0px auto;
+    padding-top: 20px;
+    min-height: 600px;
+}
+
+.wrapper h1, .wrapper h4, .wrapper p, .wrapper pre, .wrapper ul, .wrapper li
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    background: transparent;
+}
+.wrapper h1 {
+    vertical-align:middle;
+    padding-bottom:20px;
+}
+
+
+.wrapper li
+{
+    outline: 0;
+    text-decoration: none;
+    -webkit-transition-property: background color;
+    -moz-transition-property: background color;
+    -o-transition-property: background color;
+    -ms-transition-property: background color;
+    transition-property: background color;
+    -webkit-transition-duration: 0.12s;
+    -moz-transition-duration: 0.12s;
+    -o-transition-duration: 0.12s;
+    -ms-transition-duration: 0.12s;
+    transition-duration: 0.12s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+#v-nav
+{
+    height: 100%;
+    margin: auto;
+    color: #333;
+    font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+#v-nav >ul
+{
+    float: left;
+    width: 210px;
+    display: block;
+    position: relative;
+    top: 0;
+    border: 1px solid #DDD;
+    border-right-width: 0;
+    margin: auto 0 !important;
+    padding:0;
+}
+
+#v-nav >ul >li
+{
+    width: 180px;
+    list-style-type: none;
+    display: block;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    font-size: 1.11em;
+    position: relative;
+    border-right-width: 0;
+    border-bottom: 1px solid #DDD;
+    margin: auto;
+    padding: 10px 15px !important;  
+    background: whiteSmoke; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f2f2f2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* IE10+ */
+    background: linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* W3C */       
+}
+
+#v-nav >ul >li.current
+{
+    color: black;
+    border-right: none;
+    z-index: 10;
+    background: white !important;
+    position: relative;
+    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+    box-shadow: inset 0 0 35px 5px #fafbfd;
+}
+
+#v-nav >ul >li.first.current
+{
+    border-bottom: 1px solid #DDD;
+}
+
+#v-nav >ul >li.last
+{
+    border-bottom: none;
+}
+
+#v-nav >div.tab-content
+{
+    margin-left: 210px;
+    border: 1px solid #ddd;
+    background-color: #FFF;
+    min-height: 400px;
+    position: relative;
+    z-index: 9;
+    padding: 12px;
+    moz-box-shadow: inset 0 0 35px 5px #fafbfd;
+    -webkit-box-shadow: inset 0 0 35px 5px #fafbfd;
+    box-shadow: inset 0 0 35px 5px #fafbfd;
+    display: none;
+    padding: 25px;
+}
+
+#v-nav >div.tab-content >h4
+{
+    font-size: 1.2em;
+    color: Black;
+    text-shadow: 0px 1px 1px #F2F1F0;
+    border-bottom: 1px dotted #EEEDED;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/*Redux*/
+
+
+    #divLoading
+    {
+        display : none;
+    }
+    #divLoading.show
+    {
+        display : block;
+        position : fixed;
+        z-index: 100;
+        background-image : url('31.gif');
+        background-color:#666;
+        opacity : 0.8;
+        background-repeat : no-repeat;
+        background-position : center;
+        left : 0;
+        bottom : 0;
+        right : 0;
+        top : 0;
+    }
+    #loadinggif.show
+    {
+        left : 50%;
+        top : 50%;
+        position : absolute;
+        z-index : 101;
+        width : 132px;
+        height :132px;
+        margin-left : -16px;
+        margin-top : -16px;
+    }
+    div.content {
+        width : 1000px;
+        height : 1000px;
+    }
+
+    .error-text{
+        text-align: center;
+        color:red;
+    }
+    .install-text{
+        text-align: center;
+    }
+
+    #obs_mobile_store-opt-multi-select-pages .select2-container-multi .select2-choices li {
+    float: none;
+    list-style: none;
+}
+
+#obs_mobile_store-opt-multi-select-pages .select2-container-multi .select2-choices .select2-search-choice {
+    padding: 3px 5px 3px 18px;
+    margin: 6px 0 3px 5px;
+    position: relative;
+    line-height: 13px;
+    color: #333;
+    cursor: default;
+    border: 1px solid #aaaaaa;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+    background-clip: padding-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #e4e4e4;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#f4f4f4', GradientType=0);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+    background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: linear-gradient(to bottom, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    width: -moz-available-moz-available;
+}
+.fadeimageadec{
+    opacity: .3;
+}
+
+.radio_image .fadeimageadec {
+   opacity: 1; 
+}
+
+.top_button{
+     background: #067eb0 none repeat scroll 0 0;
+    border-radius: 3px;
+    color: white;
+    margin-left: 10px;
+    padding: 7px 15px;
+    text-decoration: none;
+
+}
+.top_button:hover{
+    color:white;
+}
+
+
+.top_button:focus{
+    color:white;
+}
+
+
+#adminmenu .wp-menu-image img {
+    opacity: 0.6;
+    padding: 9px 0 0;
+    width: 20px;
+}
+
